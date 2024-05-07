@@ -6,8 +6,8 @@
   "author": "Feri Teja Kusuma",
   "license": "MIT",
   "scripts": {
-    "start": "ts-node ./api/app.ts",
-    "dev": "nodemon ./api/app.ts",
+    "start": "ts-node app.ts",
+    "dev": "nodemon app.ts",
     "build": "tsc",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
