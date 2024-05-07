@@ -2,12 +2,12 @@
   "name": "bugbar-server",
   "version": "1.0.0",
   "description": "server webhook",
-  "main": "app.ts",
+  "main": "api/app.ts",
   "author": "Feri Teja Kusuma",
   "license": "MIT",
   "scripts": {
-    "start": "ts-node app.ts",
-    "dev": "nodemon app.ts",
+    "start": "ts-node ./api/app.ts",
+    "dev": "nodemon ./api/app.ts",
     "build": "tsc",
     "test": "echo \"Error: no test specified\" && exit 1"
   },

@@ -39,7 +39,7 @@ app.get("/webhook", (req: Request, res: Response) => {
   // Assuming user ID is sent as a query parameter
   const orderId = req.query.orderId as string; // Make sure to validate and sanitize the input
   if (!orderId) {
-    return res.status(400).json({ error: "User ID is required" });
+    return res.status(400).json({ error: "Order ID is required" });
   }
 
   // Emit a socket.io event to the specific user
