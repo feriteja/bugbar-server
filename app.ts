@@ -1,6 +1,7 @@
 import express, { Request, Response } from "express";
 import { createServer } from "http";
 import { Server } from "socket.io";
+import path from "path";
 import cors from "cors";
 
 const app = express();
@@ -27,6 +28,7 @@ io.on("connection", (socket) => {
 
 // Apply CORS middleware for Express
 app.use(cors(corsOptions));
+app.use(express.static(path.join(__dirname, "public")));
 
 app.get("/", (req, res) => {
   return res.status(200).json({ message: "thanks for connect" });
